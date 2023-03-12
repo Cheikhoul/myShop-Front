@@ -1,0 +1,361 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+
+header {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+}
+
+.logo {
+  width: 12%;
+  height : 60px;
+}
+
+.nav {
+  width: 100%;
+  height: 34px;
+  font-weight: 500;
+  font-size: 24px;
+  font-family : Montserrat;
+  color : #FF6060;
+}
+header>nav {
+  display: flex;
+  gap: 20px
+}
+.banner {
+  align-items: center;
+  width: 100%;
+}
+.bannerImg {
+  z-index: 1;
+  width: 85%;
+  height: 570px;
+  border-radius: 1%;
+}
+#bannerText {
+  position: absolute;
+  top: 8%;
+  left: 25% ;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  color: #d75150;
+  z-index: 2;
+  width: 75%;
+}
+
+#cardContainerTitle {
+    position: relative;
+    top: 50%;
+    left: 15% ;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 37px;
+    display: flex;
+    justify-content: center;
+    color: #d75150;
+    z-index: 2;
+    width: 75%;
+}
+
+.carte {
+  width: 340px;
+  height: 340px;
+  border-radius: 10px;
+  background: #FF6060;
+  margin: 25px;
+}
+.filter-carte {
+  position: relative;
+  width: 340px;
+  height: 340px;
+  border-radius: 10px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+}
+.titreArticle {
+  position: relative;
+  color: white;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 18px;
+  top: -150px;
+  display: flex;
+  padding: 10px;
+  z-index: 1;
+}
+.prixArticle {
+  position: relative;
+  color: white;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 18px;
+  top: -100px;
+  display: flex;
+  padding: 10px;
+  z-index: 1;
+}
+.cardContainer {
+  display:inline-flex;
+  flex-wrap: wrap;
+  background: #F7F7F7;
+  border-radius: 25px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer {
+  width: 100%;
+  height: 209px;
+  background: #111111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.logoFooter {
+  width: 12%;
+  height: 39.44px;
+}
+.copyrights {
+  width: 100%;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 24px;
+  color: white;
+}
+.dropdown { 
+  margin: 10px;
+  width: 70%;
+}
+
+.btn-primary, .btn-primary:active, .btn-primary:hover, .btn-primary:visited, .btn-primary::after  {
+  background-color: #FF6060 !important;
+  border:0px;
+  display: flex;
+  width: 100% !important;
+  border-radius: 5px;
+  box-sizing: border-box !important;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dropdown-container {
+  position:relative;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  left: 20%
+}
+.collapse{
+  position: relative;
+  background-color : #F6F6F6
+}
+
+#carouselExampleIndicators {
+  width: 100%;
+}
+
+.infos-supplementaires {
+  display: flex;
+  justify-content: space-between;
+}
+.locationInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.review {
+  width: 100px;
+}
+
+#profilPic {
+  position: relative;
+  width: 64px;
+  height: 64px;
+  border-radius: 50px;
+  background: #C4C4C4;
+}
+.nametag {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  width: 80%;
+  left: 20%;
+}
+
+.login-logo {
+  position: relative;
+  width: auto;
+  height: auto;
+  justify-content: center;
+  bottom: 150px;
+}
+
+.user-creation-form {
+  padding: 500px; 
+}
+.FormFirstname {
+  position: absolute;
+  width: 700px;
+  height: 69.34px;
+  left: 305px;
+  top: 286px;
+  background: #F4F4F4;
+  border-radius: 8px;
+  border: none;
+}
+.FormLastname {
+  position: absolute;
+  width: 700px;
+  height: 69.34px;
+  left: 305px;
+  top: 400px;
+  background: #F4F4F4;
+  border-radius: 8px;
+  border: none;
+}
+.FormEmail {
+  position: absolute;
+  width: 700px;
+  height: 69.34px;
+  left: 305px;
+  top: 514px;
+  background: #F4F4F4;
+  border-radius: 8px;
+  border: none;
+}
+.LoginFormEmail {
+  position: absolute;
+  width: 700px;
+  height: 69.34px;
+  left: 305px;
+  top: 280px;
+  background: #F4F4F4;
+  border-radius: 8px;
+  border: none;
+}
+.FormPassword {
+  position: absolute;
+  width: 700px;
+  height: 69.34px;
+  left: 305px;
+  top: 628px;
+  background: #F4F4F4;
+  border-radius: 8px;
+  border: none;
+}
+.LoginFormPassword {
+  position: absolute;
+  width: 700px;
+  height: 69.34px;
+  left: 305px;
+  top: 380px;
+  background: #F4F4F4;
+  border-radius: 8px;
+  border: none;
+}
+.FormAddress {
+  position: absolute;
+  width: 700px;
+  height: 69.34px;
+  left: 305px;
+  top: 742px;
+  background: #F4F4F4;
+  border-radius: 8px;
+  border: none;
+}
+
+.FormValidator {
+  position: absolute;
+  width: 201px;
+  height: 47px;
+  left: 550px;
+  top: 850px;
+  background: #FF6060;
+  border-radius: 15px;
+  border: none;
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  color: #FFFFFF;
+}
+.AddToCart {
+  position: relative;
+  width: 201px;
+  height: 47px;
+  left: 150px;
+  top: 0px;
+  background: #FF6060;
+  border-radius: 15px;
+  border: none;
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  color: #FFFFFF;
+}
+.LoginFormValidator {
+  position: absolute;
+  width: 201px;
+  height: 47px;
+  left: 550px;
+  top: 480px;
+  background: #FF6060;
+  border-radius: 15px;
+  border: none;
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  color: #FFFFFF;
+}
+
+.FormAdminLabel {
+  position: absolute;
+  top: 850px;
+  left: 300px;
+}
+.FormAdmin {
+  position: absolute;
+  top: 855px;
+  left: 360px;
+}
+.redirection-connexion{
+  position: absolute;
+  top: 900px;
+  left: 500px;
+}
+.redirection-inscription{
+  position: absolute;
+  top: 535px;
+  left: 500px;
+}
