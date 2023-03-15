@@ -306,6 +306,37 @@ footer {
   line-height: 18px;
   color: #FFFFFF;
 }
+.RetourAccueil {
+  position: relative;
+  width: 201px;
+  height: 47px;
+  top: 5%;
+  background: #FF6060;
+  border-radius: 15px;
+  border: none;
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  color: #FFFFFF;
+}
+
+.FormCommandeValidator {
+  position: relative;
+  width: 201px;
+  height: 47px;
+  top: 10%;
+  background: #FF6060;
+  border-radius: 15px;
+  border: none;
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  color: #FFFFFF;
+}
 .AddToCart {
   position: relative;
   width: 201px;

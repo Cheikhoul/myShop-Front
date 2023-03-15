@@ -43,7 +43,7 @@ export function Details() {
     const handleSubmit = async (event) => {
         event.preventDefault();
         try {
-            const lineResponse = await axios.post('http://localhost:3000/api/user/addToPanier', {
+            await axios.post('http://localhost:3000/api/user/addToPanier', {
                     'ArticleId':`${dataLigneCommande.ArticleId}`,
                     'CommandeId': `${session.PanierId}`,
                     'Quantity': `${dataLigneCommande.Quantity}`

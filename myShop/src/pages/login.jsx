@@ -10,7 +10,6 @@ export function Login() {
       Email: '',
       Password: ''
     });
-
     const session = useContext(SessionContext); 
   
     const navigate = useNavigate();
@@ -40,7 +39,7 @@ export function Login() {
         const { name, value } = event.target;
         setDataConnect((prevState) => ({ ...prevState, [name]: value }));
     };
-
+    console.log(session);
     return (
         <>
           <div id="login-content">
