@@ -31,8 +31,8 @@ export function Details() {
                   'token': `${session.token}`,
                   'userId': `${session.userId}`
               }
-          })
-          session.PanierId = sessionResponse.data.CommandeId;
+          });
+          session.PanierId = `${sessionResponse.data.id}`;
           setDataLigneCommande((prevState) => ({ ...prevState, CommandeId: sessionResponse.data.CommandeId }));
         }
       
@@ -60,7 +60,7 @@ export function Details() {
                 });
             console.log(session);
             console.log('Ca a marché : l ajout a un panier.')
-            navigate('/MonPanier', session.token);
+            navigate('/commande/MonPanier', session);
         }
         catch(error){
           console.log(error);

@@ -27,13 +27,15 @@ export function MonPanier(){
         }
         fetchData();
     }, []);
-    session.PanierId = monPanierData.id;
+    session.PanierId = `${monPanierData.id}`;
     console.log(session);
     console.log('Objet session');
     return (
         <div>
-
-            
+            <p>Voilà voile le contenu de votre panier.</p>
+            <p>Voila vos données personnelles modifiables si vous voulez</p>
+            <p>Continuez votre Shopping ? </p>
+            <p>Validez votre panier ?</p>
         </div>
     );
 }

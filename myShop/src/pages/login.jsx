@@ -27,7 +27,8 @@ export function Login() {
           session.userAddress = responseSession.data.Address;
           session.userAdmin = responseSession.data.Admin;
           session.userSurname = responseSession.data.Surname;
-          navigate('/home', session.token);
+          navigate('/home', session);
+          navigate('/commande/MonPanier', session);
         }
         catch (error) {
           console.log(error);
