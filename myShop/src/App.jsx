@@ -30,7 +30,6 @@ function App() {
             <Route path={"home"} element={<Home />} />
             <Route path={"login"} element={<Login />} />
             <Route path={"/commande/monPanier"} element={<MonPanier />} />
-            {/* <Route path={"/valider-panier"} element={<MonPanier />} /> */}
           </Routes>
         </div>
         {showHeaderAndFooter && <Footer />}
